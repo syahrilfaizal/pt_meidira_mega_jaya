@@ -379,6 +379,22 @@ blockquote span {
   letter-spacing: 2px;
 }
 
+.mil-suptitle1 {
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.mil-suptitle2 {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
 /* -------------------------------------------
 
 cursor
@@ -717,6 +733,14 @@ spaces
 .mil-p-240-120 {
   padding-top: 240px;
   padding-bottom: 120px;
+}
+
+.mil-p-20-30 {
+  padding-top: 20px;
+}
+
+.mil-p-0-0 {
+  padding-top: 0px;
 }
 
 .mil-p-180-180 {
@@ -2167,6 +2191,12 @@ about
   position: relative;
   overflow: hidden;
 }
+.mil-just-image1 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
 .mil-just-image.mil-v {
   padding-bottom: 120%;
 }
@@ -2862,4 +2892,10 @@ footer .mil-footer-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+
+.mil-logo img {
+    height: 1em; /* Sesuaikan tinggi gambar logo agar setara dengan tinggi font */
+    width: auto; /* Pertahankan proporsi gambar */
 }
