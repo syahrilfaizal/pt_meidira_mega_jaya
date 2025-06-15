@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Okai – Creative Portfolio & Agency HTML Template</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/table.css">
+</head>
+<body>
+	<header class="dt-header dt-header_blue">
+		<span class="dt-logo">Okai – Creative Portfolio & Agency HTML Template</span>
+	</header>
+	<div class="dt-container dt-container_flex">
+		<aside class="dt-navbar">
+			<nav class="dt-navbar__nav">
+				<div class="dt-navbar__section">
+					<ul class="dt-navbar__list">
+						<li><a href="#files_structure" class="dt-navbar__link">File structure</a></li>
+						<li>
+							<a href="#settings" class="dt-navbar__link">Settings</a>
+							<ul class="dt-navbar__list">
+								<li><a href="#include_set" class="dt-navbar__link dt-navbar__link_nested">Template Settings</a></li>
+								<li><a href="#include_fonts" class="dt-navbar__link dt-navbar__link_nested">Include Fonts</a></li>
+								<li><a href="#include_icons" class="dt-navbar__link dt-navbar__link_nested">Edit Icons</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#html_structure" class="dt-navbar__link">HTML structure</a>
+						</li>
+						<li>
+							<a href="#html_structure_header" class="dt-navbar__link">HTML structure of "Header"</a>
+						</li>
+						<li>
+							<a href="#html_structure_footer" class="dt-navbar__link">HTML structure of Footer</a>
+						</li>
+						<li><a href="#icons" class="dt-navbar__link">Icons</a></li>
+						<li><a href="#credits" class="dt-navbar__link">Credits</a></li>
+					</ul>
+				</div>
+			</nav>
+		</aside>
+		<div class="dt-content dt-content_scroll-bar-yes">
+			<div class="dt-section">
+				<h2 class="dt-title">Okai – Creative Portfolio & Agency HTML Template</h2>
+				<p>by: bslthemes</p>
+				<p>Thank you for your purchase. If you have any questions, mail me to - <a href="mailto:beshleyua@gmail.com">beshleyua@gmail.com</a></p>
+			</div>
+			<article id="files_structure" class="dt-section">
+				<h2 class="dt-title">File structure</h2>
+				<p>After unpacking archive, you'll see this structure:</p>
+				<div class="dt-info-block">
+					<pre class="code language-html">
+						<code>
+html/
+│
+├──doc/
+├──template/
+│──│──css/
+│──│──scss/
+│──│──img/
+│──│──fonts/
+│──│──js/
+│──│──│──main.js
+│──│──|──plugins/
+│──│──index.html
+│──│──home-1.html
+│──│──home-2.html
+│──│──home-3.html
+│──│──home-4.html
+│──│──home-5.html
+│──│──home-6.html
+│──│──home-7.html
+│──│──home-8.html
+│──│──home-9.html
+│──│──home-10.html
+│──│──home-11.html
+│──│──home-12.html
+│──│──home-13.html
+│──│──404.html
+│──│──about.html
+│──│──blog.html
+│──│──contact.html
+│──│──coming-soon.html
+│──│──publication.html
+│──│──services.html
+│──│──item.html
+│──│──store.html
+│──│──project.html
+│──│──portfolio-1.html
+│──│──portfolio-2.html
+│──│──portfolio-3.html
+│──│──portfolio-slider.html
+│──│──portfolio-slider-2.html
+│──│──pricing.html
+						</code>
+					</pre>
+				</div>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">css/</span> - compiled css styles for template
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">scss/</span> - main .scss styles for template
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">js/</span> - all JS library for template
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">main.js</span> - main JS for template</li>
+						</ul>
+					</li>
+				</ul>
+			</article>
+			<article id="settings" class="dt-section">
+				<h2 class="dt-title">Settings</h2>
+			</article>
+			<article id="include_fonts" class="dt-section">
+				<h2 class="dt-title">Template Settings</h2>
+				<p>For editing styling, colors, sizes, etc of the template you can use following settings, folder "/scss/_variables.scss". You need to compile the .sсss files to "/css" folder. You can use the "Visual Studio Code" app -> "Live Sass Compiler".</p>
+				<pre class="code language-html">
+					<code>
+/* -------------------------------------------
+
+fonts
+
+------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$font-1: "Poppins", sans-serif;
+
+/* -------------------------------------------
+
+colors
+
+------------------------------------------- */
+
+$d1: #0A0B0F;
+$d2: #14151A;
+
+$l1: #FFFFFF;
+$l2: #73767B;
+
+$a: #F35A38;
+$as: #f2b279;
+
+/* -------------------------------------------
+
+transition
+
+------------------------------------------- */
+
+$tsm: .2s cubic-bezier(0, 0, 0.3642, 1);
+$tmd: .4s cubic-bezier(0, 0, 0.3642, 1);
+$tlg: .6s cubic-bezier(0, 0, 0.3642, 1);
+$txl: .8s cubic-bezier(0, 0, 0.3642, 1);
+					</code>
+				</pre>
+			</article>
+			<article id="include_fonts" class="dt-section">
+				<h2 class="dt-title">Include of fonts</h2>
+				<p>For editing fonts of the template you can use following settings, folder "/scss/_variables.scss". You need to compile the .sсss files to "/css" folder. You can use the "Visual Studio Code" app -> "Live Sass Compiler".</p>
+				<pre class="code language-html">
+					<code>
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+					</code>
+				</pre>
+				<p>
+					Next step is to replace "$font-1: 'Questrial'," to your fonts names.
+				</p>
+			</article>
+			<article id="include_icons" class="dt-section">
+				<h2 class="dt-title">Edit Icons</h2>
+				<p>In this template are defined some of classes for icons, see all icons here - <a href="https://fontawesome.com/v5/search">https://fontawesome.com/v5/search</a>, use search and select icons.</p>
+				<p>Copy icon class (for example "fas fa-code") and add to tag in html file like this:</p>
+				<pre class="code language-html">
+					<code>
+&lt;i class="fas fa-pencil-ruler"&gt;&lt;/i&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure" class="dt-section">
+				<h2 class="dt-title">HTML structure</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+
+&lt;head&gt;
+
+	&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+	&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+	&lt;meta name="HandheldFriendly" content="true"&gt;
+	&lt;meta name="author" content="bslthemes" /&gt;
+
+	&lt;!-- grid css --&gt;
+	&lt;link rel="stylesheet" href="css/plugins/bootstrap-grid.css"&gt;
+	&lt;!-- font awesome css --&gt;
+	&lt;link rel="stylesheet" href="fonts/css/font-awesome.min.css"&gt;
+	&lt;!-- swiper css --&gt;
+	&lt;link rel="stylesheet" href="css/plugins/swiper.min.css"&gt;
+	&lt;!-- okai css --&gt;
+	&lt;link rel="stylesheet" href="css/style.css"&gt;
+	&lt;!-- page title --&gt;
+	&lt;title&gt;Okai - Creative Portfolio & Agency HTML Template&lt;/title&gt;
+
+	&lt;!-- Favicon --&gt;
+	&lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;
+	&lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+	&lt;!-- wrapper --&gt;
+	&lt;div id="smooth-wrapper" class="mil-page-wrapper"&gt;
+
+		&lt;!-- cursor --&gt;
+		&lt;div class="mil-cursor-follower"&gt;&lt;/div&gt;
+		&lt;!-- cursor end --&gt;
+
+		&lt;!-- scroll progress --&gt;
+		&lt;div class="mil-progress-track"&gt;
+			&lt;div class="mil-progress"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;!-- scroll progress end --&gt;
+
+		&lt;!-- top panel --&gt;
+		&lt;div class="mil-top-panel"&gt;
+			...
+		&lt;/div&gt;
+		&lt;!-- top panel end --&gt;
+
+		&lt;!-- menu --&gt;
+		&lt;div class="mil-menu-window"&gt;
+			...
+		&lt;/div&gt;
+		&lt;!-- menu end --&gt;
+
+		&lt;!-- content --&gt;
+		&lt;div id="smooth-content" class="mil-content"&gt;
+
+			&lt;!-- banner --&gt;
+			&lt;div class="mil-banner"&gt;
+				...
+			&lt;/div&gt;
+			&lt;!-- banner end --&gt;
+
+			&lt;!-- experience --&gt;
+			&lt;div class=""&gt;
+				...
+			&lt;/div&gt;
+			&lt;!-- experience end --&gt;
+
+			&lt;!-- portfolio --&gt;
+			&lt;div class="mil-portfolio mil-p-120-90"&gt;
+				...
+			&lt;/div&gt;
+			&lt;!-- portfolio end --&gt;
+
+			&lt;!-- call to action --&gt;
+			&lt;div&gt;
+				...
+			&lt;/div&gt;
+			&lt;!-- call to action end --&gt;
+
+			&lt;!-- reviews --&gt;
+			&lt;div class="mil-p-120-120"&gt;
+				...
+			&lt;/div&gt;
+			&lt;!-- reviews end --&gt;
+
+			&lt;!-- blog --&gt;
+			&lt;div class="mil-p-0-90"&gt;
+				...
+			&lt;/div&gt;
+			&lt;!-- blog end --&gt;
+
+			&lt;!-- call to action --&gt;
+			&lt;div class="mil-accent-section mil-up mil-p-180-180"&gt;
+				...
+			&lt;/div&gt;
+			&lt;!-- call to action end --&gt;
+
+			&lt;!-- footer --&gt;
+			&lt;footer&gt;
+				...
+			&lt;/footer&gt;
+			&lt;!-- footer end --&gt;
+
+		&lt;/div&gt;
+		&lt;!-- content --&gt;
+
+	&lt;/div&gt;
+	&lt;!-- wrapper end --&gt;
+
+	&lt;!-- gsap js --&gt;
+	&lt;script src="js/plugins/gsap.min.js"&gt;&lt;/script&gt;
+	&lt;!-- scroll smoother --&gt;
+	&lt;script src="js/plugins/ScrollSmoother.min.js"&gt;&lt;/script&gt;
+	&lt;!-- scroll trigger js --&gt;
+	&lt;script src="js/plugins/ScrollTrigger.min.js"&gt;&lt;/script&gt;
+	&lt;!-- scroll to js --&gt;
+	&lt;script src="js/plugins/ScrollTo.min.js"&gt;&lt;/script&gt;
+	&lt;!-- swiper js --&gt;
+	&lt;script src="js/plugins/swiper.min.js"&gt;&lt;/script&gt;
+	&lt;!-- okai js --&gt;
+	&lt;script src="js/main.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+						
+
+&lt;/html&gt;
+						
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure_header" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Header"</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- cursor --&gt;
+&lt;div class="mil-cursor-follower"&gt;&lt;/div&gt;
+&lt;!-- cursor end --&gt;
+
+&lt;!-- scroll progress --&gt;
+&lt;div class="mil-progress-track"&gt;
+	&lt;div class="mil-progress"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- scroll progress end --&gt;
+
+&lt;!-- top panel --&gt;
+&lt;div class="mil-top-panel"&gt;
+	&lt;div class="container"&gt;
+		&lt;div class="row mil-aic"&gt;
+			&lt;div class="col-6"&gt;
+				&lt;a href="index.html" class="mil-logo mil-c-gone"&gt;Okai&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class="col-6 mil-jce mil-aic"&gt;
+				&lt;div class="mil-phone mil-group-text mil-fs14"&gt;&lt;span class="mil-soft"&gt;Phone:&lt;/span&gt;&lt;span class="mil-light"&gt;+057 951 237 851&lt;/span&gt;&lt;/div&gt;
+				&lt;div class="mil-buttons-frame"&gt;
+					&lt;div class="mil-menu-btn mil-c-gone"&gt;
+						&lt;span&gt;&lt;/span&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- top panel end --&gt;
+
+&lt;!-- menu --&gt;
+&lt;div class="mil-menu-window"&gt;
+	&lt;div class="container"&gt;
+		&lt;ul class="mil-main-menu mil-c-gone"&gt;
+			&lt;li&gt;
+				&lt;a href="#."&gt;Home&lt;/a&gt;
+				&lt;ul&gt;
+					&lt;li&gt;
+						&lt;a href="home-1.html"&gt;Type 1&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="home-2.html"&gt;Type 2&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="home-3.html"&gt;Type 3&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="home-4.html"&gt;Type 4&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="home-5.html"&gt;Type 5&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="home-6.html"&gt;Type 6&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="home-7.html"&gt;Type 7&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="home-8.html"&gt;Type 8&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="home-9.html"&gt;Type 9&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="home-10.html"&gt;Type 10&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="home-11.html"&gt;Type 11&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="home-12.html"&gt;Type 12&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="home-13.html"&gt;Type 13&lt;/a&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href="#."&gt;Portfolio&lt;/a&gt;
+				&lt;ul&gt;
+					&lt;li&gt;
+						&lt;a href="portfolio-1.html"&gt;Type 1&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="portfolio-2.html"&gt;Type 2&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="portfolio-3.html"&gt;Type 3&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="portfolio-slider.html"&gt;Slider 1&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="portfolio-slider-2.html"&gt;Slider 2&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="project.html"&gt;Project&lt;/a&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href="#."&gt;Pages&lt;/a&gt;
+				&lt;ul&gt;
+					&lt;li&gt;
+						&lt;a href="about.html"&gt;About&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="services.html"&gt;Services&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="pricing.html"&gt;Pricing&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="contact.html"&gt;contact&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="store.html"&gt;Store&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="item.html"&gt;Store item&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="coming-soon.html"&gt;Coming soon&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="404.html"&gt;404&lt;/a&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href="#."&gt;Blog&lt;/a&gt;
+				&lt;ul&gt;
+					&lt;li&gt;
+						&lt;a href="blog.html"&gt;List&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="publication.html"&gt;Publication&lt;/a&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;ul class="mil-social mil-center"&gt;
+			&lt;li&gt;&lt;a href="#." class="mil-c-gone"&gt;&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#." class="mil-c-gone"&gt;&lt;i class="fab fa-behance"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#." class="mil-c-gone"&gt;&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- menu end --&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure_footer" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Footer"</h2>
+				<pre class="code language-html">
+					<code>						
+&lt;!-- footer --&gt;
+&lt;footer&gt;
+	&lt;div class="container mil-p-120-0"&gt;
+		&lt;div class="row mil-jcb"&gt;
+			&lt;div class="col-8 col-lg-4 mil-mb90"&gt;
+				&lt;a href="index.html" class="mil-logo mil-mb60 mil-up mil-c-gone"&gt;Okai&lt;/a&gt;
+				&lt;p class="mil-text mil-fs16 mil-mb60 mil-up"&gt;At Okai. we care about each client and each person who works with us and makes great projects possible&lt;/p&gt;
+				&lt;ul class="mil-social mil-up"&gt;
+					&lt;li&gt;&lt;a href="#." class="mil-c-gone"&gt;&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#." class="mil-c-gone"&gt;&lt;i class="fab fa-behance"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="#." class="mil-c-gone"&gt;&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+			&lt;div class="col-lg-2 mil-mb90"&gt;
+				&lt;h5 class="mil-fs16 mil-mb60 mil-up"&gt;Menu&lt;/h5&gt;
+				&lt;ul class="mil-footer-menu"&gt;
+					&lt;li class="mil-up"&gt;&lt;a href="about.html" class="mil-c-gone"&gt;About us&lt;/a&gt;&lt;/li&gt;
+					&lt;li class="mil-up"&gt;&lt;a href="#." class="mil-c-gone"&gt;Our Team&lt;/a&gt;&lt;/li&gt;
+					&lt;li class="mil-up"&gt;&lt;a href="#." class="mil-c-gone"&gt;Projects&lt;/a&gt;&lt;/li&gt;
+					&lt;li class="mil-up"&gt;&lt;a href="#." class="mil-c-gone"&gt;Services&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+			&lt;div class="col-lg-4 mil-mb90"&gt;
+				&lt;h5 class="mil-fs16 mil-mb60 mil-up"&gt;Contact Us&lt;/h5&gt;
+				&lt;ul class="mil-footer-list"&gt;
+					&lt;li class="mil-text mil-up"&gt;Phone: +051 - 958 237 851&lt;/li&gt;
+					&lt;li class="mil-text mil-up"&gt;Email: support@okai.design&lt;/li&gt;
+					&lt;li class="mil-text mil-up"&gt;Address: 300 St. Mary's L, Suite 8060, Houston,&lt;br&gt; TX 77079, Estados Unidos&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="mil-footer-bottom mil-up"&gt;
+		&lt;div class="container"&gt;
+			&lt;div class="row"&gt;
+				&lt;div class="col-lg-6 mil-mb30"&gt;
+					&lt;p class="mil-fs14 mil-soft"&gt;© 2021 Okai Agency, designed by TexTheme&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class="col-lg-6 mil-jce mil-992-jcs mil-mb30"&gt;
+					&lt;a href="#." class="mil-group-text mil-accent mil-c-gone" id="mil-btt"&gt;&lt;i class="fas fa-chevron-up"&gt;&lt;/i&gt; &lt;span&gt;Back to top&lt;/span&gt;&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/footer&gt;
+&lt;!-- footer end --&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="icons" class="dt-section">
+				<h2 class="dt-title">Icons</h2>
+				<p>
+					In this template are defined some of classes for icons, your can see all icons here - <a href="https://fontawesome.com/v5/search">https://fontawesome.com/v5/search</a>
+				</p>
+			</article>
+			<article id="credits" class="dt-section">
+				<h2 class="dt-title">Source & Credits</h2>
+				<h3>Scripts</h3>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">jQuery</span> <a target="_blank" href="https://jquery.com/">https://jquery.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Isotope</span> <a target="_blank" href="https://isotope.metafizzy.co/">https://isotope.metafizzy.co/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">imagesLoaded</span> <a target="_blank" href="http://imagesloaded.desandro.com/">http://imagesloaded.desandro.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">jQuery Validation Plugin</span> <a target="_blank" href="http://jqueryvalidation.org/">http://jqueryvalidation.org/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Magnific Popup</span> <a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Swiper</span> <a target="_blank" href="https://swiperjs.com/">https://swiperjs.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Bootstrap</span> <a target="_blank" href="https://getbootstrap.com/">https://getbootstrap.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">GSAP</span> <a target="_blank" href="https://greensock.com">https://greensock.com</a>
+					</li>
+				</ul>
+				<h3>Images</h3>
+				<p>Any Images or logos used in previews are not included in this item or final purchase.</p>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Istock, 
+							Shutterstock, 
+							Freepik, 
+							Pexels, 
+							Unsplash</span>
+					</li>
+				</ul>
+			</article>
+		</div>
+	</div>
+<script src="assets/rainbow-custom.min.js"></script>
+</body>
+</html>
