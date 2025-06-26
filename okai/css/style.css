@@ -99,14 +99,14 @@ body {
   display: flex;
   align-items: center;
 }
-.mil-logo:after {
+/* .mil-logo:after {
   content: "";
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: #F35A38;
   margin-left: 5px;
-}
+} */
 
 .mil-soft-section {
   background-color: #14151A;
