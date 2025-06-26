@@ -170,6 +170,17 @@
     border-radius: 15px;
     overflow: hidden;
 }
+
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+.mil-menu-window {
+  display: none;
+}
+
+.mil-menu-window.mil-c-gone {
+  display: block;
+}
     </style>
 
 </head>
@@ -209,11 +220,11 @@
     </span>
 </div>
 
-                        <div class="mil-buttons-frame">
+                        <!-- <div class="mil-buttons-frame">
                             <div class="mil-menu-btn mil-c-gone">
                                 <span></span>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -221,131 +232,35 @@
         <!-- top panel end -->
 
         <!-- menu -->
-        <div class="mil-menu-window">
+        <!-- <div class="mil-menu-window">
             <div class="container">
                 <ul class="mil-main-menu mil-c-gone">
                     <li>
-                        <a href="#.">Home</a>
-                        <!-- <ul>
-                            <li>
-                                <a href="home-1.html">Type 1</a>
-                            </li>
-                            <li>
-                                <a href="home-2.html">Type 2</a>
-                            </li>
-                            <li>
-                                <a href="home-3.html">Type 3</a>
-                            </li>
-                            <li>
-                                <a href="home-4.html">Type 4</a>
-                            </li>
-                            <li>
-                                <a href="home-5.html">Type 5</a>
-                            </li>
-                            <li>
-                                <a href="home-6.html">Type 6</a>
-                            </li>
-                            <li>
-                                <a href="home-7.html">Type 7</a>
-                            </li>
-                            <li>
-                                <a href="home-8.html">Type 8</a>
-                            </li>
-                            <li>
-                                <a href="home-9.html">Type 9</a>
-                            </li>
-                            <li>
-                                <a href="home-10.html">Type 10</a>
-                            </li>
-                            <li>
-                                <a href="home-11.html">Type 11</a>
-                            </li>
-                            <li>
-                                <a href="home-12.html">Type 12</a>
-                            </li>
-                            <li>
-                                <a href="home-13.html">Type 13</a>
-                            </li> -->
-                        <!-- </ul> -->
+                        <a href="#home">Home</a>
+                      
+                    </li>
+                     <li>
+                        <a href="#about">About us</a>
                     </li>
                     <li>
-                        <a href="#.">Portfolio</a>
-                        <ul>
-                            <li>
-                                <a href="portfolio-1.html">Type 1</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2.html">Type 2</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3.html">Type 3</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-slider.html">Slider 1</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-slider-2.html">Slider 2</a>
-                            </li>
-                            <li>
-                                <a href="project.html">Project</a>
-                            </li>
-                        </ul>
+                        <a href="#about">Servic</a>
                     </li>
                     <li>
-                        <a href="#.">Pages</a>
-                        <ul>
-                            <li>
-                                <a href="about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="services.html">Services</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">contact</a>
-                            </li>
-                            <li>
-                                <a href="store.html">Store</a>
-                            </li>
-                            <li>
-                                <a href="#">Store item</a>
-                            </li>
-                            <li>
-                                <a href="coming-soon.html">Coming soon</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                        </ul>
+                        <a href="#product">Product</a>
                     </li>
                     <li>
-                        <a href="#.">Blog</a>
-                        <ul>
-                            <li>
-                                <a href="blog.html">List</a>
-                            </li>
-                            <li>
-                                <a href="publication.html">Publication</a>
-                            </li>
-                        </ul>
+                        <a href="#contact">Contact</a>
                     </li>
-                </ul>
-                <ul class="mil-social mil-center">
-                    <li><a href="#." class="mil-c-gone"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#." class="mil-c-gone"><i class="fab fa-behance"></i></a></li>
-                    <li><a href="#." class="mil-c-gone"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
-        </div>
+        </div> -->
         <!-- menu end -->
 
         <!-- content -->
         <div id="smooth-content" class="mil-content">
 
-            <!-- banner -->
-            <div class="mil-banner">
+            <!-- home -->
+            <div class="mil-banner" id="home">
                 <div class="container">
                     <div class="row mil-aic">
                         <div class="col-12 col-lg-6">
@@ -363,7 +278,7 @@
                 </div>
             </div>
             <div></div>
-            <!-- banner end -->
+            <!-- home end -->
 <div class="mil-p-90-90 bg-dark-custom">
     <div class="container">
         <div class="row justify-content-center align-items-center">
@@ -386,8 +301,8 @@
         </div>
     </div>
 </div>
-
-                <div class="mil-p-20-30">
+                <!-- about -->
+                <div class="mil-p-20-30" id="about">
                     <div class="container">
                         <div class="row mil-jcb">
                             <div class="col-lg-5 mil-mb20">
@@ -405,7 +320,7 @@
                         </div>
                     </div>
                 </div>
-
+<!-- about end -->
                 <div class="mil-about mil-p-30-120">
                 <div class="container">
                     <div class="row flex-sm-row-reverse mil-jcb mil-aic">
@@ -481,8 +396,8 @@
             </div>
             <!-- reviews end -->
 
-            <!-- prices-->
-            <div class="mil-blog-list mil-p-120-90">
+            <!-- service-->
+            <div class="mil-blog-list mil-p-120-90" id="services">
                 <div class="container">
                     <div class="mil-tac mil-mb90">
                         <h2 id="service" class="mil-fs42 mil-up">Our Services</h2>
@@ -530,7 +445,7 @@
                     </div>
                 </div>
             </div>
-            <!-- prices end -->
+            <!-- service end -->
 
             <!-- iconboxes -->
             <center>
@@ -719,7 +634,7 @@
     </div>
 </div>
 
-             <!-- store -->
+             <!-- Product -->
             <div class="mil-p-120-120">
                 <div class="container">
                     <span id="produk" class="mil-suptitle2 mil-accent mil-mb30 mil-up">Product</span>
@@ -847,7 +762,7 @@
                     </div>
                 </div>
             </div>
-            <!-- store end -->
+            <!-- Product end -->
 
 
             <!-- portfolio -->
@@ -1158,7 +1073,23 @@
 
 </body>
 
+<script>
+    // Close the hamburger menu when a menu item is clicked
+document.addEventListener('DOMContentLoaded', function () {
+    // Close the hamburger menu when a menu item is clicked
+    document.querySelectorAll('.mil-main-menu a').forEach(function (menuItem) {
+        menuItem.addEventListener('click', function () {
+            document.querySelector('.mil-menu-window').classList.remove('mil-c-gone');
+        });
+    });
 
+    // Toggle the hamburger menu visibility
+    document.querySelector('.mil-menu-btn').addEventListener('click', function() {
+        document.querySelector('.mil-menu-window').classList.toggle('mil-c-gone');
+    });
+});
+
+</script>
 <script>
     function changeLanguage(language) {
     // Bahasa Indonesia
