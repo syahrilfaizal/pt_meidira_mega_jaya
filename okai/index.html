@@ -151,6 +151,9 @@
     .custom-table td {
         min-width: 150px;
     }
+    .header-title { /* Ganti '.header-title' dengan kelas atau ID elemen yang berisi teks */
+        text-align: center;
+    }
 }
 
 /* Animation */
@@ -181,6 +184,13 @@ html {
 .mil-menu-window.mil-c-gone {
   display: block;
 }
+
+@media only screen and (max-width: 767px) {
+    .text-center-mobile {
+        text-align: center;
+    }
+}
+
     </style>
 
 </head>
@@ -1009,8 +1019,8 @@ html {
             <footer>
                 <div class="container mil-p-120-0">
                     <div class="row mil-jcb">
-                        <div class="col-6 col-lg-6 mil-mb90">
-                            <a href="index.html" class="mil-logo mil-mb60 mil-up mil-c-gone">PT. MEIDIRA MEGAH JAYA</a>
+                        <div class="col-lg-6 mil-mb90">
+                            <h5  class=" mil-mb60 mil-up mil-c-gone ">PT. MEIDIRA MEGAH JAYA</h5>
                             <p class="mil-text mil-fs16 mil-mb60 mil-up">Bersama Meidira Megah Jaya, kami membangun hubungan dan menjaga kebutuhan dengan lebih baik.</p>
                             <!-- <ul class="mil-social mil-up">
                                 <li><a href="#." class="mil-c-gone"><i class="fab fa-facebook-f"></i></a></li>
