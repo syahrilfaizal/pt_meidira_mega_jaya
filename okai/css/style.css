@@ -104,7 +104,7 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: red;
+  background-color: #D30000;
   margin-left: 5px;
 } */
 
@@ -113,7 +113,7 @@ body {
 }
 
 .mil-accent-section {
-  background-color: red;
+  background-color: #D30000;
 }
 
 .mil-out-section {
@@ -318,7 +318,7 @@ h6 {
 }
 
 .mil-accent {
-  color: red;
+  color: #D30000;
 }
 
 .mil-thin {
@@ -343,7 +343,7 @@ blockquote:before {
   left: -5px;
   font-size: 92px;
   padding-top: 30px;
-  color: red;
+  color: #D30000;
 }
 blockquote span {
   display: block;
@@ -435,7 +435,7 @@ cursor
   transition-delay: 0s;
 }
 .mil-cursor-follower.mil-dark-active, .mil-cursor-follower.mil-gone-active, .mil-cursor-follower.mil-view-active, .mil-cursor-follower.mil-next-active, .mil-cursor-follower.mil-read-active, .mil-cursor-follower.mil-swipe-active {
-  background-color: red;
+  background-color: #D30000;
   transform: scale(3);
   filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.25));
 }
@@ -500,7 +500,7 @@ scrollbar
   background-color: #000;
 }
 .mil-progress-track .mil-progress {
-  background-color: red;
+  background-color: #D30000;
   height: 0;
   width: 5px;
   border-radius: 4px;
@@ -537,7 +537,7 @@ breadcrumbs
   letter-spacing: 2px;
 }
 .mil-breadcrumbs li a:hover {
-  color: red;
+  color: #D30000;
 }
 .mil-breadcrumbs li:last-child {
   cursor: not-allowed;
@@ -561,7 +561,7 @@ buttons
   border-radius: 60px;
   padding: 0 40px;
   height: 60px;
-  background-color: red;
+  background-color: #D30000;
   color: #fff;
   text-decoration: none;
   display: inline-flex;
@@ -592,7 +592,7 @@ buttons
   color: #FFFFFF;
 }
 .mil-btn.mil-btn-link.mil-accent {
-  color: red;
+  color: #D30000;
 }
 .mil-btn i {
   margin-left: 10px;
@@ -637,7 +637,7 @@ link
 ------------------------------------------- */
 .mil-text-link {
   position: relative;
-  color: red;
+  color: #D30000;
   text-decoration: none;
 }
 .mil-text-link:after {
@@ -647,7 +647,7 @@ link
   left: 0;
   height: 1px;
   width: 0;
-  background-color: red;
+  background-color: #D30000;
   transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-text-link.mil-light {
@@ -660,10 +660,10 @@ link
   color: #73767B;
 }
 .mil-text-link.mil-soft:after {
-  background-color: red;
+  background-color: #D30000;
 }
 .mil-text-link.mil-soft:hover {
-  color: red;
+  color: #D30000;
 }
 .mil-text-link.mil-dark {
   color: #0A0B0F;
@@ -871,7 +871,7 @@ spaces
   z-index: 9;
 }
 .mil-banner .mil-banner-img {
-  background-color: red;
+  background-color: #D30000;
   height: 100%;
   width: calc(150% - 15px);
   position: absolute;
@@ -1087,7 +1087,7 @@ menu
   transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-main-menu li:hover > a {
-  color: red;
+  color: #D30000;
 }
 .mil-main-menu li ul {
   display: flex;
@@ -1231,7 +1231,7 @@ social
   transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-social li a:hover {
-  color: red;
+  color: #D30000;
 }
 
 /* -------------------------------------------
@@ -1290,7 +1290,7 @@ portfolio
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-project-card .mil-cover-frame .mil-hover-overlay .mil-addition-btn {
-  background-color: red;
+  background-color: #D30000;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1344,17 +1344,17 @@ portfolio
 .mil-half-project-card {
   display: block;
   width: 100%;
-  background-color: red;
+  background-color: #D30000;
 }
 
 .mil-filter a * {
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-filter a *:hover {
-  color: red;
+  color: #D30000;
 }
 .mil-filter a *.mil-active * {
-  color: red;
+  color: #D30000;
 }
 
 .mil-more-loader {
@@ -1509,7 +1509,7 @@ fullscreen slider
 .mil-port-nav .mil-port-btn {
   width: 100px;
   height: 100px;
-  background-color: red;
+  background-color: #D30000;
   border-radius: 50%;
   margin-right: 30px;
   display: flex;
@@ -1561,13 +1561,13 @@ fullscreen slider
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: solid 2px red;
+  border: solid 2px #D30000;
 }
 .mil-circle-text.mil-dark-inside:after {
   background-color: #0A0B0F;
 }
 .mil-circle-text.mil-accent-inside:after {
-  background-color: red;
+  background-color: #D30000;
 }
 @media (max-width: 992px) {
   .mil-circle-text {
@@ -1598,7 +1598,7 @@ counters
   height: 100%;
   width: 0;
   border-radius: 5px;
-  background-color: red;
+  background-color: #D30000;
   transition: 0.8s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-counter-item .mil-counter-text {
@@ -1625,12 +1625,12 @@ counters
 
 .mil-exp-box {
   position: relative;
-  background-color: red;
+  background-color: #D30000;
   padding: 90px 90px 50px;
 }
 .mil-exp-box:before {
   content: "";
-  background-color: red;
+  background-color: #D30000;
   width: 235px;
   height: 100%;
   display: block;
@@ -1715,7 +1715,7 @@ counters
 .mil-exp-box-2 {
   padding-top: 160px;
   position: relative;
-  background-color: red;
+  background-color: #D30000;
 }
 .mil-exp-box-2:after {
   content: "";
@@ -1819,7 +1819,7 @@ call to action
 ------------------------------------------- */
 .mil-cta {
   padding: 90px 90px 60px;
-  background-color: red;
+  background-color: #D30000;
 }
 @media (max-width: 992px) {
   .mil-cta {
@@ -1893,7 +1893,7 @@ blog
   opacity: 1;
 }
 .mil-blog-card:hover .mil-text {
-  color: red;
+  color: #D30000;
 }
 
 .mil-share {
@@ -1911,7 +1911,7 @@ blog
   transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-category li a:hover {
-  color: red;
+  color: #D30000;
 }
 .mil-category li:last-child {
   margin-bottom: 0;
@@ -1961,7 +1961,7 @@ comments
   transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-comments li .mil-comment .mil-comment-text .mil-reply:hover {
-  color: red;
+  color: #D30000;
 }
 .mil-comments li ul {
   padding-left: 90px;
@@ -2110,7 +2110,7 @@ slider
   pointer-events: none;
 }
 .mil-slider-btn:hover svg path {
-  fill: red;
+  fill: #D30000;
 }
 
 /* -------------------------------------------
@@ -2151,7 +2151,7 @@ about
 }
 
 .mil-about-img {
-  background-color: red;
+  background-color: #D30000;
   height: 100%;
   width: 120%;
   position: absolute;
@@ -2306,7 +2306,7 @@ brands
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-partner-card:hover {
-  background-color: red;
+  background-color: #D30000;
 }
 
 /* -------------------------------------------
@@ -2373,7 +2373,7 @@ project
 }
 
 .mil-cover-img {
-  background-color: red;
+  background-color: #D30000;
   height: 100%;
   width: 120%;
   position: absolute;
@@ -2428,7 +2428,7 @@ services
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-service-item .mil-service-text h3 span {
-  color: red;
+  color: #D30000;
   margin-right: 30px;
 }
 .mil-service-item .mil-service-text p {
@@ -2480,11 +2480,11 @@ services
   }
 }
 .mil-service-item:hover .mil-service-text h3 {
-  color: red;
+  color: #D30000;
 }
 .mil-service-item:hover .mil-service-right .mil-service-btn {
-  border: solid 2px red;
-  background-color: red;
+  border: solid 2px #D30000;
+  background-color: #D30000;
   color: #0A0B0F;
 }
 .mil-service-item:hover .mil-service-right .mil-service-cover {
@@ -2544,13 +2544,13 @@ accordion
   content: "+";
 }
 .mil-accordion .mil-accordion-menu.mil-active {
-  color: red;
+  color: #D30000;
 }
 .mil-accordion .mil-accordion-menu.mil-active .mil-accordion-icon:after {
   content: "-";
 }
 .mil-accordion .mil-accordion-menu.mil-active:hover {
-  color: red;
+  color: #D30000;
 }
 .mil-accordion .mil-accordion-content {
   height: 0;
@@ -2663,7 +2663,7 @@ price
   margin-right: 0;
 }
 .mil-switcher span.mil-active {
-  background-color: red;
+  background-color: #D30000;
   color: #0A0B0F;
 }
 
@@ -2676,7 +2676,7 @@ price
   font-size: 18px;
   margin-left: 5px;
 }
-.mil-price-card.mil-featured {
+.mil-price-card.mil-featu#D30000 {
   background-color: #14151A;
 }
 .mil-price-card .mil-price-list {
@@ -2785,7 +2785,7 @@ store
   margin-right: 15px;
 }
 .mil-rating .mil-stars i {
-  color: red;
+  color: #D30000;
 }
 .mil-rating .mil-stars i.mil-empty {
   color: #73767B;
@@ -2813,7 +2813,7 @@ tabs
 }
 
 .mil-tabs li.mil-current {
-  border-bottom: solid 2px red;
+  border-bottom: solid 2px #D30000;
   color: #FFFFFF;
 }
 
