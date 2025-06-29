@@ -1098,7 +1098,7 @@ html {
     <!-- scroll smoother -->
     <script src="js/plugins/ScrollSmoother.min.js"></script>
     <!-- scroll trigger js -->
-    <script src="js/plugins/ScrollTrigger.min.js"></script>
+    <!-- <script src="js/plugins/ScrollTrigger.min.js"></script> -->
     <!-- scroll to js -->
     <script src="js/plugins/ScrollTo.min.js"></script>
     <!-- swiper js -->
@@ -1107,24 +1107,6 @@ html {
     <script src="js/main.js"></script>
 
 </body>
-
-<script>
-    // Close the hamburger menu when a menu item is clicked
-document.addEventListener('DOMContentLoaded', function () {
-    // Close the hamburger menu when a menu item is clicked
-    document.querySelectorAll('.mil-main-menu a').forEach(function (menuItem) {
-        menuItem.addEventListener('click', function () {
-            document.querySelector('.mil-menu-window').classList.remove('mil-c-gone');
-        });
-    });
-
-    // Toggle the hamburger menu visibility
-    document.querySelector('.mil-menu-btn').addEventListener('click', function() {
-        document.querySelector('.mil-menu-window').classList.toggle('mil-c-gone');
-    });
-});
-
-</script>
 <script>
     function changeLanguage(language) {
     // Bahasa Indonesia
