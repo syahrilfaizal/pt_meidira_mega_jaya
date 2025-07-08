@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
             duration: 0.5,
             ease: "sine",
             onComplete: () => {
-                ScrollTrigger.refresh();
+                debouncedScrollTriggerRefresh();
             }
         }).reverse();
 
@@ -369,7 +369,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         on: {
             slideChangeTransitionEnd: function () {
-                ScrollTrigger.refresh();
+                debouncedScrollTriggerRefresh();
             }
         }
     });
@@ -386,7 +386,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         on: {
             slideChangeTransitionEnd: function () {
-                ScrollTrigger.refresh();
+                debouncedScrollTriggerRefresh();
             }
         }
     });
