@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var smoother = ScrollSmoother.create({
         smooth: 1,
         effects: true,
-        smoothTouch: 0.1,
+        smoothTouch: false,
     });
 
     // Debounce function to limit how often a function can run
