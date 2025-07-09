@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     ------------------------------------------- */
     // Create ScrollSmoother instance but keep a reference for possible disabling
-    // var smoother = ScrollSmoother.create({
-    //     smooth: 1,
-    //     effects: true,
-    //     smoothTouch: false,
-    // });
+    var smoother = ScrollSmoother.create({
+        smooth: 1,
+        effects: true,
+        smoothTouch: false,
+    });
 
     // Debounce function to limit how often a function can run
     function debounce(func, wait, immediate) {
