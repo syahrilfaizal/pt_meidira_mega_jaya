@@ -24,8 +24,10 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- <style>
-    
+    <style>
+    * {
+    border: 1px solid red !important;
+}
     /* Responsif untuk perangkat mobile */
 @media (max-width: 768px) {
     .mil-group-text {
@@ -50,6 +52,24 @@
     
     .mil-phone a:hover {
         color: #D30000; /* Hover effect */
+    }
+    /* Tambahkan kode ini di dalam blok @media (max-width: 768px) */
+
+    .mil-out-right {
+        /* Menghapus efek dorongan ke kanan */
+        margin-right: 0; 
+        transform: none; /* Menghapus jika ada efek transform */
+    }
+
+    .mil-banner-img, .mil-about-img {
+        /* Memastikan gambar tidak lebih lebar dari containernya */
+        max-width: 100%;
+        height: auto;
+    }
+    /* Tambahkan kode ini di dalam blok @media (max-width: 768px) */
+
+    .mil-reviews-slider.mil-c-swipe {
+        overflow: hidden;
     }
 }
 
@@ -190,7 +210,7 @@
     }
 }
 
-    </style> -->
+    </style>
 
 </head>
 
