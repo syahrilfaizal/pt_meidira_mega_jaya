@@ -23,11 +23,36 @@ document.addEventListener("DOMContentLoaded", function () {
     ScrollSmoother
 
     ------------------------------------------- */
-    ScrollSmoother.create({
+    // Create ScrollSmoother instance but keep a reference for possible disabling
+    var smoother = ScrollSmoother.create({
         smooth: 1,
         effects: true,
-        smoothTouch: 0.1,
+        smoothTouch: false,
     });
+
+    // Debounce function to limit how often a function can run
+    function debounce(func, wait, immediate) {
+        var timeout;
+        return function() {
+            var context = this, args = arguments;
+            var later = function() {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    }
+
+    // Debounced version of ScrollTrigger.refresh
+    var debouncedScrollTriggerRefresh = debounce(function() {
+        if (typeof ScrollTrigger !== 'undefined') {
+            ScrollTrigger.refresh();
+        }
+    }, 200);
+
     /* -------------------------------------------
     
     tabs
@@ -54,9 +79,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     tabContentElement.classList.add('mil-current');
                 }
 
-                if (typeof ScrollTrigger !== 'undefined') {
-                    ScrollTrigger.refresh();
-                }
+                // Use debounced refresh to prevent scroll jumps
+                debouncedScrollTriggerRefresh();
             });
         });
     }
@@ -112,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
             duration: 0.5,
             ease: "sine",
             onComplete: () => {
-                ScrollTrigger.refresh();
+                debouncedScrollTriggerRefresh();
             }
         }).reverse();
 
@@ -345,7 +369,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         on: {
             slideChangeTransitionEnd: function () {
-                ScrollTrigger.refresh();
+                debouncedScrollTriggerRefresh();
             }
         }
     });
@@ -362,7 +386,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         on: {
             slideChangeTransitionEnd: function () {
-                ScrollTrigger.refresh();
+                debouncedScrollTriggerRefresh();
             }
         }
     });
