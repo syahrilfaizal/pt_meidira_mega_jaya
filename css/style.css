@@ -87,17 +87,13 @@ body {
   line-height: 100%;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 .mil-page-wrapper {
   position: relative;
   overflow: hidden;
-  overflow-x: hidden;
 }
 
-#smooth-wrapper {
+html, body {
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -887,8 +883,6 @@ spaces
   overflow: hidden;
   top: 0;
   left: -50%;
-  max-width: 100%;
-  left: 0;
 }
 .mil-banner .mil-banner-img img {
   width: 100%;
