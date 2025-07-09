@@ -2901,32 +2901,3 @@ footer .mil-footer-bottom {
     height: 1em; /* Sesuaikan tinggi gambar logo agar setara dengan tinggi font */
     width: auto; /* Pertahankan proporsi gambar */
 }
-
-/* html, body {
-    /* Removed overflow-x: hidden to avoid breaking effects */
- */
-
-/* Override wide banner images to prevent horizontal overflow */
-.mil-banner .mil-banner-img,
-.mil-banner .mil-banner-img.mil-out-left,
-.mil-banner .mil-banner-img.mil-out-right {
-    width: 100% !important;
-    position: relative !important;
-    left: 0 !important;
-    right: 0 !important;
-    overflow: hidden;
-}
-
-/* Override wide about images to prevent horizontal overflow */
-.mil-about-img,
-.mil-about-img.mil-out-right {
-    width: 100% !important;
-    position: relative !important;
-    left: 0 !important;
-    overflow: hidden;
-}
-
-/* Temporary debug outline to identify overflow elements */
-* {
-    outline: 1px solid red !important;
-}
