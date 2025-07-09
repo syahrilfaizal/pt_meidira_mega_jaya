@@ -2902,9 +2902,9 @@ footer .mil-footer-bottom {
     width: auto; /* Pertahankan proporsi gambar */
 }
 
-html, body {
+/* html, body {
     /* Removed overflow-x: hidden to avoid breaking effects */
-}
+ */
 
 /* Override wide banner images to prevent horizontal overflow */
 .mil-banner .mil-banner-img,
