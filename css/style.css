@@ -87,6 +87,10 @@ body {
   line-height: 100%;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .mil-page-wrapper {
   position: relative;
   overflow: hidden;
