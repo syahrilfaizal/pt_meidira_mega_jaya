@@ -2901,3 +2901,7 @@ footer .mil-footer-bottom {
     height: 1em; /* Sesuaikan tinggi gambar logo agar setara dengan tinggi font */
     width: auto; /* Pertahankan proporsi gambar */
 }
+
+html, body {
+    overflow-x: hidden;
+}
