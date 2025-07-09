@@ -94,6 +94,11 @@ html, body {
 .mil-page-wrapper {
   position: relative;
   overflow: hidden;
+  overflow-x: hidden;
+}
+
+#smooth-wrapper {
+  overflow-x: hidden;
 }
 
 .mil-logo {
@@ -882,6 +887,8 @@ spaces
   overflow: hidden;
   top: 0;
   left: -50%;
+  max-width: 100%;
+  left: 0;
 }
 .mil-banner .mil-banner-img img {
   width: 100%;
