@@ -2925,3 +2925,8 @@ html, body {
     left: 0 !important;
     overflow: hidden;
 }
+
+/* Temporary debug outline to identify overflow elements */
+* {
+    outline: 1px solid red !important;
+}
