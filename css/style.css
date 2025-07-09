@@ -2903,5 +2903,25 @@ footer .mil-footer-bottom {
 }
 
 html, body {
-    overflow-x: hidden;
+    /* Removed overflow-x: hidden to avoid breaking effects */
+}
+
+/* Override wide banner images to prevent horizontal overflow */
+.mil-banner .mil-banner-img,
+.mil-banner .mil-banner-img.mil-out-left,
+.mil-banner .mil-banner-img.mil-out-right {
+    width: 100% !important;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    overflow: hidden;
+}
+
+/* Override wide about images to prevent horizontal overflow */
+.mil-about-img,
+.mil-about-img.mil-out-right {
+    width: 100% !important;
+    position: relative !important;
+    left: 0 !important;
+    overflow: hidden;
 }
