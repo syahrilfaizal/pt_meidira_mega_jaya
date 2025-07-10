@@ -1,0 +1,425 @@
+/* ===========================================
+   MANUAL EFFECTS CUSTOM - Penyesuaian dengan Tema
+   =========================================== */
+
+/* Penyesuaian Manual Slider dengan tema */
+.manual-slider {
+    background: linear-gradient(135deg, #0A0B0F 0%, #14151A 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.manual-slide {
+    background-image: linear-gradient(rgba(10,11,15,0.8), rgba(20,21,26,0.8)), url('../img/banners/1.jpg');
+}
+
+.manual-slide:nth-child(2) {
+    background-image: linear-gradient(rgba(10,11,15,0.8), rgba(20,21,26,0.8)), url('../img/banners/2.jpg');
+}
+
+.manual-slide:nth-child(3) {
+    background-image: linear-gradient(rgba(10,11,15,0.8), rgba(20,21,26,0.8)), url('../img/banners/3.jpg');
+}
+
+.manual-slide:nth-child(4) {
+    background-image: linear-gradient(rgba(10,11,15,0.8), rgba(20,21,26,0.8)), url('../img/banners/4.jpg');
+}
+
+.manual-slide-content h1 {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.manual-slide-content p {
+    color: #73767B;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Penyesuaian tombol slider */
+.manual-slider-arrow {
+    background: rgba(211,0,0,0.9);
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(211,0,0,0.3);
+}
+
+.manual-slider-arrow:hover {
+    background: #D30000;
+    box-shadow: 0 6px 20px rgba(211,0,0,0.5);
+}
+
+/* Penyesuaian dots */
+.manual-slider-dot {
+    background: rgba(255,255,255,0.3);
+    border: 2px solid rgba(255,255,255,0.5);
+}
+
+.manual-slider-dot.active {
+    background: #D30000;
+    border-color: #D30000;
+    box-shadow: 0 0 10px rgba(211,0,0,0.5);
+}
+
+/* Penyesuaian hover effects dengan tema */
+.hover-lift:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(211,0,0,0.2);
+}
+
+.hover-scale:hover {
+    transform: scale(1.08);
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 40px rgba(211,0,0,0.6);
+}
+
+.hover-slide::before {
+    background: linear-gradient(90deg, transparent, rgba(211,0,0,0.4), transparent);
+}
+
+/* Penyesuaian progress bar */
+.progress-container {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #D30000, #ff4444, #D30000);
+    box-shadow: 0 0 10px rgba(211,0,0,0.3);
+}
+
+/* Penyesuaian flip card */
+.flip-card-front {
+    background: linear-gradient(135deg, #D30000 0%, #ff4444 100%);
+    box-shadow: 0 10px 30px rgba(211,0,0,0.3);
+}
+
+.flip-card-back {
+    background: linear-gradient(135deg, #14151A 0%, #0A0B0F 100%);
+    border: 2px solid #D30000;
+}
+
+/* Penyesuaian modal */
+.modal-content {
+    background: #14151A;
+    color: #FFFFFF;
+    border: 2px solid #D30000;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+}
+
+.modal-close {
+    color: #D30000;
+    font-weight: bold;
+}
+
+.modal-close:hover {
+    color: #ff4444;
+    transform: scale(1.2);
+}
+
+/* Penyesuaian tooltip */
+.tooltip::before {
+    background: #14151A;
+    border: 1px solid #D30000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.tooltip::after {
+    border-top-color: #14151A;
+}
+
+/* Penyesuaian loading effects */
+.loading-spinner {
+    border-color: rgba(211,0,0,0.2);
+    border-top-color: #D30000;
+}
+
+.loading-dots span {
+    background: #D30000;
+    box-shadow: 0 0 10px rgba(211,0,0,0.5);
+}
+
+/* Penyesuaian parallax */
+.parallax-bg {
+    background-image: linear-gradient(rgba(10,11,15,0.7), rgba(20,21,26,0.7)), url('../img/banners/5.jpg');
+}
+
+.parallax-content {
+    background: rgba(20,21,26,0.8);
+    border: 2px solid #D30000;
+    backdrop-filter: blur(10px);
+}
+
+/* Penyesuaian animasi dengan tema */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Penyesuaian scroll to top button */
+.scroll-to-top {
+    background: linear-gradient(135deg, #D30000, #ff4444);
+    box-shadow: 0 5px 20px rgba(211,0,0,0.4);
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.scroll-to-top:hover {
+    background: linear-gradient(135deg, #ff4444, #D30000);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(211,0,0,0.6);
+}
+
+/* Penyesuaian form elements */
+.mil-form input,
+.mil-form textarea {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #FFFFFF;
+}
+
+.mil-form input:focus,
+.mil-form textarea:focus {
+    border-color: #D30000;
+    box-shadow: 0 0 15px rgba(211,0,0,0.3);
+}
+
+.mil-form input::placeholder,
+.mil-form textarea::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+/* Penyesuaian responsive design */
+@media (max-width: 768px) {
+    .manual-slider {
+        min-height: 70vh;
+    }
+    
+    .manual-slide-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .manual-slide-content p {
+        font-size: 1rem;
+    }
+    
+    .flip-card {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .parallax-section {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .manual-slider {
+        min-height: 60vh;
+    }
+    
+    .manual-slide-content h1 {
+        font-size: 2rem;
+    }
+    
+    .manual-slider-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .modal-content {
+        padding: 20px;
+        margin: 10px;
+    }
+}
+
+/* Penyesuaian dengan tema gelap */
+.mil-dark-section .hover-lift:hover {
+    box-shadow: 0 25px 50px rgba(211,0,0,0.3);
+}
+
+.mil-dark-section .hover-glow:hover {
+    box-shadow: 0 0 40px rgba(211,0,0,0.7);
+}
+
+/* Penyesuaian dengan tema accent */
+.mil-accent-section .progress-container {
+    background: rgba(255,255,255,0.2);
+}
+
+.mil-accent-section .progress-bar {
+    background: linear-gradient(90deg, #FFFFFF, #f0f0f0, #FFFFFF);
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* Penyesuaian dengan tema soft */
+.mil-soft-section .flip-card-front {
+    background: linear-gradient(135deg, #D30000 0%, #ff4444 100%);
+}
+
+.mil-soft-section .flip-card-back {
+    background: linear-gradient(135deg, #0A0B0F 0%, #14151A 100%);
+}
+
+/* Efek tambahan untuk tema */
+.glow-effect {
+    position: relative;
+}
+
+.glow-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(211,0,0,0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.glow-effect:hover::after {
+    opacity: 1;
+}
+
+/* Efek particle untuk background */
+.particle-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.particle-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(211,0,0,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(211,0,0,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(211,0,0,0.05) 0%, transparent 50%);
+    animation: particleFloat 20s ease-in-out infinite;
+}
+
+@keyframes particleFloat {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    33% {
+        transform: translateY(-20px) rotate(120deg);
+    }
+    66% {
+        transform: translateY(20px) rotate(240deg);
+    }
+}
+
+/* Efek text reveal */
+.text-reveal {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-reveal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #D30000, transparent);
+    transition: left 0.8s ease;
+}
+
+.text-reveal:hover::before {
+    left: 100%;
+}
+
+/* Efek border animation */
+.border-animate {
+    position: relative;
+}
+
+.border-animate::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, #D30000, #ff4444, #D30000) border-box;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    animation: borderRotate 3s linear infinite;
+}
+
+@keyframes borderRotate {
+    0% {
+        background: linear-gradient(0deg, #D30000, #ff4444, #D30000) border-box;
+    }
+    100% {
+        background: linear-gradient(360deg, #D30000, #ff4444, #D30000) border-box;
+    }
+} 

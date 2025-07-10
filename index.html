@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
     <!-- swiper css -->
     <link rel="stylesheet" href="css/plugins/swiper.min.css">
+    <!-- manual effects css -->
+    <link rel="stylesheet" href="css/manual-effects.css">
+    <link rel="stylesheet" href="css/manual-effects-custom.css">
     <!-- okai css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- page title -->
@@ -203,6 +206,95 @@
     }
 }
 
+/* Manual Text Slider Styles */
+.manual-text-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+}
+
+.manual-text-slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 500%;
+}
+
+.manual-text-slide {
+    flex: 0 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.manual-text-slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(211, 0, 0, 0.8);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.manual-text-slider-btn:hover {
+    background: rgba(211, 0, 0, 1);
+}
+
+.manual-text-slider-btn.prev {
+    left: 10px;
+}
+
+.manual-text-slider-btn.next {
+    right: 10px;
+}
+
+.manual-text-slider-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.manual-text-slider-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(211, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.manual-text-slider-dot.active {
+    background: rgba(211, 0, 0, 1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .manual-text-slider {
+        height: 250px;
+    }
+    
+    .manual-text-slide {
+        padding: 0 10px;
+    }
+    
+    .manual-text-slider-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
+
     </style>
 
 </head>
@@ -378,61 +470,51 @@
                 </div>
             </div>
 
-            <!-- reviews -->
-            <!-- <div class="mil-p-0-120">
+            <!-- Mission Section -->
+            <div class="mil-p-0-120">
                 <div class="container">
                     <div class="row mil-jcc">
-                        <div class="col-lg-8">
+                        <div class="col-lg-10">
                             <span class="mil-suptitle2 mil-accent mil-mb30 mil-up" id="Misi">Our Mission</span>
-                            <div class="swiper-container mil-reviews-slider mil-c-swipe">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="mil-review" data-swiper-parallax="20%" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0">
-                                            <p id="mission-1" class="mil-text mil-fs30 mil-light mil-tac mil-mb60  mil-up">Uniform views between management and employees in maintaining company value and achieving goals together.</p>
+                            <!-- Manual Text Slider Start -->
+                            <div class="manual-text-slider" id="mission-slider">
+                                <div class="manual-text-slider-track">
+                                    <div class="manual-text-slide">
+                                        <div class="mil-review">
+                                            <p id="mission-1" class="mil-text mil-fs30 mil-light mil-tac mil-mb60 mil-up">Uniform views between management and employees in maintaining company value and achieving goals together.</p>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="mil-review" data-swiper-parallax="20%" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0">
-                                            <p id="mission-2" class="mil-text mil-fs30 mil-light mil-tac mil-mb60  mil-up">Maximizing the implementation of risk management, marketing, operations, finance, human resources, technology, and information effective and efficient.</p>
+                                    <div class="manual-text-slide">
+                                        <div class="mil-review">
+                                            <p id="mission-2" class="mil-text mil-fs30 mil-light mil-tac mil-mb60 mil-up">Maximizing the implementation of risk management, marketing, operations, finance, human resources, technology, and information effective and efficient.</p>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="mil-review" data-swiper-parallax="20%" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0">
-                                            <p id="mission-3" class="mil-text mil-fs30 mil-light mil-tac mil-mb60  mil-up">The application of the precautionary principle in every decision making and good corporate governance.</p>
+                                    <div class="manual-text-slide">
+                                        <div class="mil-review">
+                                            <p id="mission-3" class="mil-text mil-fs30 mil-light mil-tac mil-mb60 mil-up">The application of the precautionary principle in every decision making and good corporate governance.</p>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="mil-review" data-swiper-parallax="20%" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0">
-                                            <p id="mission-4" class="mil-text mil-fs30 mil-light mil-tac mil-mb60  mil-up"> Provide training and carry out the recruitment process of resources the right human resources to produce a competent workforce patent in their field, dedicated and passionate about culture companies to achieve common goals.</p>
+                                    <div class="manual-text-slide">
+                                        <div class="mil-review">
+                                            <p id="mission-4" class="mil-text mil-fs30 mil-light mil-tac mil-mb60 mil-up">Provide training and carry out the recruitment process of resources the right human resources to produce a competent workforce patent in their field, dedicated and passionate about culture companies to achieve common goals.</p>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="mil-review" data-swiper-parallax="20%" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="0">
-                                            <p id="mission-5" class="mil-text mil-fs30 mil-light mil-tac mil-mb60  mil-up">Increasing competition through collaboration with various parties in theconstruction sector on a national and inter national scale.</p>
+                                    <div class="manual-text-slide">
+                                        <div class="mil-review">
+                                            <p id="mission-5" class="mil-text mil-fs30 mil-light mil-tac mil-mb60 mil-up">Increasing competition through collaboration with various parties in the construction sector on a national and international scale.</p>
                                         </div>
                                     </div>
                                 </div>
+                                <button class="manual-text-slider-btn prev">‹</button>
+                                <button class="manual-text-slider-btn next">›</button>
+                                <div class="manual-text-slider-dots"></div>
                             </div>
-                        </div>
-                        <div class="col-10 col-md-5 mil-relative">
-                            <div class="mil-reviews-nav mil-up">
-                                <div class="mil-slider-btn mil-prev mil-c-gone">
-                                    <svg width="28" height="15" viewBox="0 0 28 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.25 8.74984H23.2325L19.1162 12.8661C18.6281 13.3542 18.6281 14.1455 19.1162 14.6336C19.3606 14.878 19.68 14.9998 20 14.9998C20.32 14.9998 20.6394 14.878 20.8838 14.6336L27.1338 8.38359C27.3681 8.14984 27.5 7.83172 27.5 7.49984C27.5 7.16797 27.3681 6.85047 27.1338 6.61609L20.8838 0.366094C20.3956 -0.122031 19.6044 -0.122031 19.1162 0.366094C18.6281 0.854219 18.6281 1.64547 19.1162 2.13359L23.2325 6.24984H1.25C0.56 6.24984 0 6.80984 0 7.49984C0 8.18984 0.56 8.74984 1.25 8.74984Z" fill="black" />
-                                    </svg>
-
-                                </div>
-                                <div class="mil-slider-btn mil-next mil-c-gone">
-                                    <svg width="28" height="15" viewBox="0 0 28 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.25 8.74984H23.2325L19.1162 12.8661C18.6281 13.3542 18.6281 14.1455 19.1162 14.6336C19.3606 14.878 19.68 14.9998 20 14.9998C20.32 14.9998 20.6394 14.878 20.8838 14.6336L27.1338 8.38359C27.3681 8.14984 27.5 7.83172 27.5 7.49984C27.5 7.16797 27.3681 6.85047 27.1338 6.61609L20.8838 0.366094C20.3956 -0.122031 19.6044 -0.122031 19.1162 0.366094C18.6281 0.854219 18.6281 1.64547 19.1162 2.13359L23.2325 6.24984H1.25C0.56 6.24984 0 6.80984 0 7.49984C0 8.18984 0.56 8.74984 1.25 8.74984Z" fill="black" />
-                                    </svg>
-                                </div>
-                            </div>
+                            <!-- Manual Text Slider End -->
                         </div>
                     </div>
                 </div>
-            </div> -->
-            <!-- reviews end -->
+            </div>
+            <!-- Mission Section end -->
 
             <!-- service-->
             <div class="mil-blog-list mil-p-120-90" id="services">
@@ -1131,6 +1213,8 @@
     <script src="js/plugins/ScrollTo.min.js"></script>
     <!-- swiper js -->
     <script src="js/plugins/swiper.min.js"></script>
+    <!-- manual effects js -->
+    <script src="js/manual-effects.js"></script>
     <!-- okai js -->
     <script src="js/main.js"></script>
 
@@ -1234,7 +1318,85 @@
     </script>
 
 </body>
-<script>
+    <script>
+    // Manual Text Slider Functions
+    function initManualTextSlider(sliderId) {
+        const slider = document.getElementById(sliderId);
+        if (!slider) return;
+        
+        const track = slider.querySelector('.manual-text-slider-track');
+        const slides = slider.querySelectorAll('.manual-text-slide');
+        const dotsContainer = slider.querySelector('.manual-text-slider-dots');
+        const prevBtn = slider.querySelector('.manual-text-slider-btn.prev');
+        const nextBtn = slider.querySelector('.manual-text-slider-btn.next');
+        
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+        
+        // Create dots
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.className = 'manual-text-slider-dot';
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(index));
+            dotsContainer.appendChild(dot);
+        });
+        
+        function updateSlider() {
+            const translateX = -currentSlide * (100 / totalSlides);
+            track.style.transform = `translateX(${translateX}%)`;
+            
+            // Update dots
+            const dots = dotsContainer.querySelectorAll('.manual-text-slider-dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+        
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlider();
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlider();
+        }
+        
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        }
+        
+        // Event listeners
+        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+        
+        // Auto-play
+        setInterval(nextSlide, 5000);
+        
+        // Store functions globally for onclick handlers
+        window[`manualTextSliderNext_${sliderId}`] = nextSlide;
+        window[`manualTextSliderPrev_${sliderId}`] = prevSlide;
+    }
+    
+    function manualTextSliderNext(sliderId) {
+        if (window[`manualTextSliderNext_${sliderId}`]) {
+            window[`manualTextSliderNext_${sliderId}`]();
+        }
+    }
+    
+    function manualTextSliderPrev(sliderId) {
+        if (window[`manualTextSliderPrev_${sliderId}`]) {
+            window[`manualTextSliderPrev_${sliderId}`]();
+        }
+    }
+    
+    // Initialize text slider when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        initManualTextSlider('mission-slider');
+    });
+    
     function changeLanguage(language) {
     // Bahasa Indonesia
     if (language === 'id') {
@@ -1374,5 +1536,7 @@
 
 </script>
 
+
+</html>
 
 </html>

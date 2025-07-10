@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="author" content="bslthemes" />
+    
+    <!-- Cache Control Meta Tags -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- grid css -->
+    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <!-- manual effects css -->
+    <link rel="stylesheet" href="css/manual-effects.css">
+    <!-- okai css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- page title -->
+    <title>Manual Slider Implementation - PT. MEIDIRA MEGAH JAYA</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Page Wrapper -->
+    <div class="mil-page-wrapper">
+        
+        <!-- Top Panel -->
+        <div class="mil-top-panel">
+            <div class="container">
+                <div class="row mil-aic">
+                    <div class="col-6">
+                        <a href="index.html" class="mil-logo mil-c-gone d-flex align-items-center">
+                            <img src="img/media/logo.png" alt="" class="logo-img">
+                            <span class="ms-2 fs-4 fs-sm-6">PT. MEIDIRA MEGAH JAYA</span>
+                        </a>
+                    </div>
+                    <div class="col-6 mil-jce mil-aic">
+                        <div class="mil-buttons-frame">
+                            <span class="mil-soft">Language:</span>
+                            <span class="mil-light">
+                                <a href="javascript:void(0)" onclick="changeLanguage('id')" class="mil-c-gone">Indonesia</a>/ 
+                                <a href="javascript:void(0)" onclick="changeLanguage('en')" class="mil-c-gone">English</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="mil-content">
+
+            <!-- Manual Slider Banner -->
+            <section class="manual-slider" id="home">
+                <div class="manual-slider-container">
+                    <div class="manual-slide">
+                        <div class="manual-slide-content">
+                            <h1 class="mil-fs68 mil-mb60">PT. MEIDIRA MEGAH <br>JAYA</h1>
+                            <p class="mil-text mil-fs20 mil-mb30">Perusahaan terdepan dalam solusi bisnis dan teknologi</p>
+                            <a href="#about" class="mil-btn mil-c-gone">About Us</a>
+                        </div>
+                    </div>
+                    <div class="manual-slide">
+                        <div class="manual-slide-content">
+                            <h1 class="mil-fs68 mil-mb60">Layanan <br>Profesional</h1>
+                            <p class="mil-text mil-fs20 mil-mb30">Memberikan layanan terbaik dengan tim yang berpengalaman</p>
+                            <a href="#services" class="mil-btn mil-c-gone">Lihat Layanan</a>
+                        </div>
+                    </div>
+                    <div class="manual-slide">
+                        <div class="manual-slide-content">
+                            <h1 class="mil-fs68 mil-mb60">Inovasi <br>Teknologi</h1>
+                            <p class="mil-text mil-fs20 mil-mb30">Menggunakan teknologi terkini untuk solusi terbaik</p>
+                            <a href="#portfolio" class="mil-btn mil-c-gone">Lihat Portfolio</a>
+                        </div>
+                    </div>
+                    <div class="manual-slide">
+                        <div class="manual-slide-content">
+                            <h1 class="mil-fs68 mil-mb60">Hubungi <br>Kami</h1>
+                            <p class="mil-text mil-fs20 mil-mb30">Siap membantu Anda mencapai tujuan bisnis</p>
+                            <a href="#contact" class="mil-btn mil-c-gone">Kontak Kami</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider Navigation -->
+                <div class="manual-slider-nav">
+                    <div class="manual-slider-dot active"></div>
+                    <div class="manual-slider-dot"></div>
+                    <div class="manual-slider-dot"></div>
+                    <div class="manual-slider-dot"></div>
+                </div>
+                
+                <!-- Slider Arrows -->
+                <button class="manual-slider-arrow manual-slider-prev">‹</button>
+                <button class="manual-slider-arrow manual-slider-next">›</button>
+            </section>
+
+            <!-- About Section with Hover Effects -->
+            <div class="mil-p-90-90 bg-dark-custom">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-6 mt-5">
+                            <div class="special-exp-section hover-lift" data-animation="slideInLeft">
+                                <div class="special-exp-content">
+                                    <div id="years" class="special-exp-number">Years <span id="of">of</span></div>
+                                    <h2 id="exp" class="special-exp-text">experienced with<br>various companies</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 mt-lg-5">
+                            <div data-animation="slideInRight">
+                                <p class="mil-text mil-fs16 mil-light mil-up" id="about" style="text-align: justify; margin-top: 15px;">
+                                    PT Meidira Megah Jaya, is a dynamic and innovative company based in Balikpapan, East Kalimantan, offering comprehensive one-stop solutions for construction, installation, trade, and technology services, driven by a commitment to quality, customer satisfaction, and industry-leading expertise.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="mil-p-20-30">
+                <div class="container">
+                    <div class="row mil-jcb">
+                        <div class="col-lg-5 mil-mb20">
+                            <span id="tentangsaya" class="mil-suptitle mil-accent mil-mb30 mil-up" data-animation="slideInUp">About Us</span>
+                        </div>
+                    </div>
+                    <div class="container mil-p-0-0">
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-10">
+                                <p class="mil-text mil-fs16 mil-light mil-up" id="kami" style="text-align: justify;" data-animation="slideInUp">
+                                    Since our inception on July 30, 2021, we have been a dynamic and forwardthinking company committed to providing one-stop solution for a wide range of construction and trade services. With a diverse portfolio spanning construction, installation, trade, and technology, we are dedicated to transforming ideas into reality. Our commitment to quality, innovation, and customer satisfaction sets us apart as a leader in the industry.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision Section with Card Flip -->
+            <div class="mil-about mil-p-30-120">
+                <div class="container">
+                    <div class="row flex-sm-row-reverse mil-jcb mil-aic">
+                        <div class="col-lg-5 mil-relative">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <div class="mil-about-text">
+                                            <span id="visi" class="mil-suptitle mil-accent mil-mb30 mil-up">Our Vision</span>
+                                            <h2 id="visikami" class="mil-fs42 mil-mb30 mil-up">To be the best General Supplier company in Indonesia</h2>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <div class="mil-about-text">
+                                            <h3>Vision Details</h3>
+                                            <p>that emphasizes continuous development, satisfied customers, and the welfare of stakeholders through the implementation of (good corporate governance) and commitment to social responsibility (corporate social responsibility).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 mil-about-image-frame">
+                            <div class="mil-about-img mil-out-right mil-up hover-scale" data-animation="slideInRight">
+                                <img src="img/media/ilustrasi.png" alt="banner" class="mil-scale-img" data-value-1="1" data-value-2="1.25">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission Section with Progress Bars -->
+            <div class="mil-p-0-120">
+                <div class="container">
+                    <div class="row mil-jcc">
+                        <div class="col-lg-8">
+                            <span class="mil-suptitle2 mil-accent mil-mb30 mil-up" id="Misi" data-animation="slideInUp">Our Mission</span>
+                            
+                            <!-- Mission Items with Progress Bars -->
+                            <div class="mil-mb-60" data-animation="slideInUp">
+                                <h4>Mission 1: Uniform Views</h4>
+                                <p class="mil-text mil-fs16 mil-light mil-mb30">Uniform views between management and employees in maintaining company value and achieving goals together.</p>
+                                <div class="progress-container">
+                                    <div class="progress-bar" data-progress="95"></div>
+                                </div>
+                            </div>
+
+                            <div class="mil-mb-60" data-animation="slideInUp">
+                                <h4>Mission 2: Risk Management</h4>
+                                <p class="mil-text mil-fs16 mil-light mil-mb30">Maximizing the implementation of risk management, marketing, operations, finance, human resources, technology, and information effective and efficient.</p>
+                                <div class="progress-container">
+                                    <div class="progress-bar" data-progress="88"></div>
+                                </div>
+                            </div>
+
+                            <div class="mil-mb-60" data-animation="slideInUp">
+                                <h4>Mission 3: Customer Satisfaction</h4>
+                                <p class="mil-text mil-fs16 mil-light mil-mb30">Ensuring customer satisfaction through quality service and innovative solutions.</p>
+                                <div class="progress-container">
+                                    <div class="progress-bar" data-progress="92"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Section with Hover Effects -->
+            <div class="mil-soft-section mil-p-120-120">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2 class="mil-mb-60" data-animation="slideInUp">Our Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="mil-project-card hover-lift" data-animation="slideInLeft">
+                                <div class="mil-cover-frame">
+                                    <img src="img/portfolio/1.jpg" alt="Construction">
+                                </div>
+                                <h4>Construction</h4>
+                                <p>Professional construction services with quality guarantee</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="mil-project-card hover-scale" data-animation="slideInUp">
+                                <div class="mil-cover-frame">
+                                    <img src="img/portfolio/2.jpg" alt="Installation">
+                                </div>
+                                <h4>Installation</h4>
+                                <p>Expert installation services for various equipment</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="mil-project-card hover-glow" data-animation="slideInRight">
+                                <div class="mil-cover-frame">
+                                    <img src="img/portfolio/3.jpg" alt="Technology">
+                                </div>
+                                <h4>Technology</h4>
+                                <p>Innovative technology solutions for modern business</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section with Modal -->
+            <div class="mil-accent-section mil-p-120-120">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2 class="mil-mb-60" data-animation="slideInUp">Contact Us</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="mil-text-center">
+                                <button class="mil-btn tooltip" data-tooltip="Klik untuk membuka form kontak" data-modal="contact-modal">Hubungi Kami</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Modal -->
+            <div class="modal-overlay" id="contact-modal">
+                <div class="modal-content">
+                    <button class="modal-close">&times;</button>
+                    <h3>Contact Form</h3>
+                    <form>
+                        <div class="mil-form">
+                            <input type="text" placeholder="Nama Lengkap" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Pesan" rows="5" required></textarea>
+                            <button type="submit" class="mil-btn">Kirim Pesan</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="mil-dark-section mil-p-120-120">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="mil-text-center">
+                                <h3>PT. MEIDIRA MEGAH JAYA</h3>
+                                <p>Solusi terdepan untuk bisnis Anda</p>
+                                <p>© 2024 PT. MEIDIRA MEGAH JAYA. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/manual-effects.js"></script>
+    
+    <script>
+        // Language change function (placeholder)
+        function changeLanguage(lang) {
+            console.log('Language changed to:', lang);
+            // Implement language change logic here
+        }
+    </script>
+</body>
+
+</html> 
