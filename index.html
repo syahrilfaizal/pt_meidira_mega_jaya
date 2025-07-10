@@ -8,6 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="HandheldFriendly" content="true">
     <meta name="author" content="bslthemes" />
+    
+    <!-- Cache Control Meta Tags -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
 
     <!-- grid css -->
     <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
@@ -1128,6 +1133,105 @@
     <script src="js/plugins/swiper.min.js"></script>
     <!-- okai js -->
     <script src="js/main.js"></script>
+
+    <!-- Cache and Cookie Management Script -->
+    <script>
+        // Function to clear all cookies
+        function clearAllCookies() {
+            const cookies = document.cookie.split(";");
+            
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i];
+                const eqPos = cookie.indexOf("=");
+                const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+                document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+            }
+        }
+
+        // Function to clear browser cache for the current page
+        function clearPageCache() {
+            // Force reload without cache
+            if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD) {
+                window.location.reload(true);
+            }
+        }
+
+        // Function to add cache-busting parameters to resources
+        function addCacheBuster() {
+            const timestamp = new Date().getTime();
+            const links = document.querySelectorAll('link[rel="stylesheet"], script[src]');
+            
+            links.forEach(link => {
+                if (link.href && !link.href.includes('?') && !link.href.includes('#')) {
+                    link.href = link.href + '?v=' + timestamp;
+                }
+            });
+        }
+
+        // Function to set cache control headers via meta tags
+        function setCacheControl() {
+            // Add meta tags to prevent caching
+            const metaTags = [
+                '<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">',
+                '<meta http-equiv="Pragma" content="no-cache">',
+                '<meta http-equiv="Expires" content="0">'
+            ];
+            
+            metaTags.forEach(tag => {
+                if (!document.querySelector(`meta[http-equiv="${tag.match(/http-equiv="([^"]+)"/)[1]}"]`)) {
+                    document.head.insertAdjacentHTML('beforeend', tag);
+                }
+            });
+        }
+
+        // Main function to initialize cache clearing
+        function initializeCacheClearing() {
+            // Clear cookies on page load
+            clearAllCookies();
+            
+            // Set cache control headers
+            setCacheControl();
+            
+            // Add cache buster to resources
+            addCacheBuster();
+            
+            // Clear page cache if navigating back/forward
+            clearPageCache();
+            
+            console.log('Cache and cookies cleared successfully');
+        }
+
+        // Run cache clearing when page loads
+        document.addEventListener('DOMContentLoaded', initializeCacheClearing);
+        
+        // Also run on window load to ensure all resources are loaded
+        window.addEventListener('load', function() {
+            // Force refresh of images and other resources
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                if (img.src && !img.src.includes('?') && !img.src.includes('#')) {
+                    img.src = img.src + '?v=' + new Date().getTime();
+                }
+            });
+        });
+
+        // Clear cache on page visibility change (when user returns to tab)
+        document.addEventListener('visibilitychange', function() {
+            if (!document.hidden) {
+                // Small delay to ensure smooth user experience
+                setTimeout(() => {
+                    clearAllCookies();
+                }, 100);
+            }
+        });
+
+        // Prevent browser back/forward cache
+        window.addEventListener('pageshow', function(event) {
+            if (event.persisted) {
+                window.location.reload();
+            }
+        });
+    </script>
 
 </body>
 <script>
