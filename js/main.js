@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ScrollSmoother.create({
         smooth: 1,
         effects: true,
-        smoothTouch: false,
+        smoothTouch: 0.1,
     });
     /* -------------------------------------------
     
